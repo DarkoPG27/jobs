@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import JobsView from "@/views/JobsView.vue";
+import NotfoundView from "@/views/NotfoundView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,6 +15,12 @@ const router = createRouter({
       path: "/jobs",
       name: "jobs",
       component: JobsView,
+    },
+
+    {
+      path: "/:catcAll(.*)",
+      name: "not-found",
+      component: NotfoundView,
     },
   ],
 });
