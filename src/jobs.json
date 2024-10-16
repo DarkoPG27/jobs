@@ -43,17 +43,59 @@
       }
     },
     {
-      "id": "5",
-      "title": "Full Stack Vue Developer",
-      "type": "Full-Time",
-      "description": "Exciting opportunity for a Full-Time Front-End Developer in bustling Atlanta, GA. We are seeking a talented individual with a passion for building elegant and scalable web applications. Join our team and make an impact!",
-      "location": "Atlanta, GA",
-      "salary": "$90K - $100K",
+      "type": "Internship",
+      "title": "Rose Navarro",
+      "description": "Rerum sint accusamu",
+      "salary": "$150K - $175K",
+      "location": "Proident ipsa recu",
       "company": {
-        "name": "Browning Technologies",
-        "description": "Browning Technologies is a rapidly growing technology company specializing in e-commerce solutions. We offer a dynamic and collaborative work environment where employees are encouraged to think creatively and innovate.",
-        "contactEmail": "contact@consecteturadipisicing.com",
-        "contactPhone": "555-555-5555"
+        "name": "Barber and Talley Traders",
+        "description": "Assumenda porro offi",
+        "contactEmail": "xyhijetuc@mailinator.com",
+        "contactPhone": "+1 (765) 534-2156"
+      },
+      "id": "5"
+    },
+    {
+      "id": "0699",
+      "type": "Full-Time",
+      "title": "Hector Mcconnell",
+      "description": "Ut sint distinctio ",
+      "salary": "$100K - $125K",
+      "location": "Ullam minus eiusmod ",
+      "company": {
+        "name": "Wilson and Rodriquez Inc",
+        "description": "Ipsam laudantium qu",
+        "contactEmail": "fojo@mailinator.com",
+        "contactPhone": "+1 (162) 153-8909"
+      }
+    },
+    {
+      "id": "a355",
+      "type": "Full-Time",
+      "title": "Tyler Booth",
+      "description": "Enim blanditiis aut ",
+      "salary": "Under $50K",
+      "location": "Et molestias cillum ",
+      "company": {
+        "name": "Saunders Holman Inc",
+        "description": "Commodo proident mo",
+        "contactEmail": "qypi@mailinator.com",
+        "contactPhone": "+1 (346) 643-1585"
+      }
+    },
+    {
+      "id": "c864",
+      "type": "Internship",
+      "title": "September Best",
+      "description": "Non dignissimos ea s",
+      "salary": "$50K - $60K",
+      "location": "Et sit id dolor mol",
+      "company": {
+        "name": "Fox and Stewart Trading",
+        "description": "Voluptatem expedita ",
+        "contactEmail": "synaf@mailinator.com",
+        "contactPhone": "+1 (599) 902-8794"
       }
     }
   ]

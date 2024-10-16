@@ -1,9 +1,11 @@
 <script setup>
-import axios from "axios";
+/* import axios from "axios"; */
 import { reactive, onMounted } from "vue";
 import router from "@/router";
 import { useRoute } from "vue-router";
 import { useToast } from "vue-toastification";
+
+import { jobs } from "@/composables/jobs";
 
 const route = useRoute();
 
@@ -43,18 +45,55 @@ const handleSubmit = async () => {
     },
   };
 
+  console.log("updatedJob", updatedJob);
+
   const toast = useToast();
 
   try {
+    jobs.value.map((job, index) =>
+      Number(job.id) === Number(jobId)
+        ? (jobs.value[index] = { ...job, ...updatedJob })
+        : job
+    );
+
+    toast.success("Job Updated Successfully");
+    router.push(`/jobs/${jobId}`);
+  } catch (error) {
+    console.error("Error fetching job", error);
+    toast.error("Job Was Not Updated");
+  }
+
+  /*   try {
     const response = await axios.put(`/api/jobs/${jobId}`, updatedJob);
     toast.success("Job Updated Successfully");
     router.push(`/jobs/${response.data.id}`);
   } catch (error) {
     console.error("Error fetching job", error);
     toast.error("Job Was Not Updated");
-  }
+  } */
 };
 
+onMounted(() => {
+  try {
+    state.job = [...jobs.value].filter((item) => item.id === jobId)[0];
+    //Populate inputs
+    form.type = state.job.type;
+    form.title = state.job.title;
+    form.description = state.job.description;
+    form.salary = state.job.salary;
+    form.location = state.job.location;
+    form.company.name = state.job.company.name;
+    form.company.description = state.job.company.description;
+    form.company.contactEmail = state.job.company.contactEmail;
+    form.company.contactPhone = state.job.company.contactPhone;
+  } catch (error) {
+    console.log("Error fetching job", error);
+  } finally {
+    state.isLoading = false;
+  }
+});
+
+/* 
 onMounted(async () => {
   try {
     const response = await axios.get(`/api/jobs/${jobId}`);
@@ -74,7 +113,7 @@ onMounted(async () => {
   } finally {
     state.isLoading = false;
   }
-});
+}); */
 </script>
 
 <template>
