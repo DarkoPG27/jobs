@@ -109,6 +109,19 @@
         "contactEmail": "hukuj@mailinator.com",
         "contactPhone": "+1 (965) 613-4661"
       }
+    },
+    {
+      "id": "53d3",
+      "type": "Full-Time",
+      "description": "Nulla facere non tot",
+      "salary": "$60K - $70K",
+      "location": "Perspiciatis laboru",
+      "company": {
+        "name": "Romero Hart Inc",
+        "description": "Praesentium officiis",
+        "contactEmail": "malibenir@mailinator.com",
+        "contactPhone": "+1 (462) 293-2167"
+      }
     }
   ]
 }
