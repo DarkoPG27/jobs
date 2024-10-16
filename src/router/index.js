@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import JobsView from "@/views/JobsView.vue";
-import NotfoundView from "@/views/NotFoundView.vue";
+import NotFoundView from "@/views/NotFoundView.vue";
 import JobView from "@/views/JobView.vue";
 import AddJobView from "@/views/AddJobView.vue";
 import EditJobView from "@/views/EditJobView.vue";
@@ -41,7 +41,7 @@ const router = createRouter({
     {
       path: "/:catcAll(.*)",
       name: "not-found",
-      component: NotfoundView,
+      component: NotFoundView,
     },
   ],
 });
