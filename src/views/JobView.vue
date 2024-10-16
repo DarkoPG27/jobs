@@ -3,6 +3,7 @@ import PulseLoader from "vue-spinner/src/PulseLoader.vue";
 import { reactive, onMounted } from "vue";
 import { useRoute, RouterLink } from "vue-router";
 import axios from "axios";
+import BackButton from "@/components/BackButton.vue";
 
 const route = useRoute();
 
@@ -28,16 +29,7 @@ console.log("state", state);
 </script>
 
 <template>
-  <!--   <section>
-    <div class="container m-auto py-6 px-6">
-      <a
-        href="jobs.html"
-        class="text-green-500 hover:text-green-600 flex items-center"
-      >
-        <i class="fas fa-arrow-left mr-2"></i> Back to Job Listings
-      </a>
-    </div>
-  </section> -->
+  <BackButton />
 
   <section v-if="!state.isLoading" class="bg-green-50">
     <div class="container m-auto py-10 px-6">
