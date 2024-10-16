@@ -83,45 +83,6 @@
         "contactEmail": "contact@ipsumlorem.com",
         "contactPhone": "555-555-5555"
       }
-    },
-    {
-      "id": "6f09",
-      "type": "Remote",
-      "description": "Rerum ut commodi asp",
-      "salary": "$70K - $80K",
-      "location": "Quo magni ullamco se",
-      "company": {
-        "name": "Carey and Dickson Associates",
-        "description": "Mollit vitae irure p",
-        "contactEmail": "puwoso@mailinator.com",
-        "contactPhone": "+1 (887) 696-8097"
-      }
-    },
-    {
-      "id": "668e",
-      "type": "Internship",
-      "description": "Saepe ut unde eum au",
-      "salary": "$50K - $60K",
-      "location": "Temporibus voluptas ",
-      "company": {
-        "name": "Kirkland Hutchinson LLC",
-        "description": "Laboriosam ut qui e",
-        "contactEmail": "hukuj@mailinator.com",
-        "contactPhone": "+1 (965) 613-4661"
-      }
-    },
-    {
-      "id": "53d3",
-      "type": "Full-Time",
-      "description": "Nulla facere non tot",
-      "salary": "$60K - $70K",
-      "location": "Perspiciatis laboru",
-      "company": {
-        "name": "Romero Hart Inc",
-        "description": "Praesentium officiis",
-        "contactEmail": "malibenir@mailinator.com",
-        "contactPhone": "+1 (462) 293-2167"
-      }
     }
   ]
 }
